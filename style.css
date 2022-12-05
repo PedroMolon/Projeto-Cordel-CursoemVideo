@@ -15,7 +15,9 @@
     padding: 0px;
 }
 
-body {
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
     font-family: var(--font-padrao);
 }
 
@@ -30,7 +32,6 @@ header h1 {
     font-family: var(--font-passion-one);
     font-size: 5em;
     padding-top: 50px;
-    text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.367);
     font-weight: normal;
 }
 
@@ -38,7 +39,7 @@ header p {
     color: gray;
     font-weight: normal;
     font-size: 1em;
-    padding: 5px;
+    padding-bottom: 50px;
 }
 
 header a {
@@ -47,5 +48,69 @@ header a {
 }
 
 header a:hover {
+    text-decoration: underline;
+}
+
+section {
+    font-family: var(--font-sriracha);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.padrão {
+    background-color: white;
+    color: black;
+    font-size: 2em;
+}
+
+section.imagem {
+    background-color: gray;
+    color: white;
+    font-size: 2em;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.222);
+    width: fit-content;
+    padding: 15px;
+}
+
+section#imagem1 {
+    background-image: url(images/background001.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#imagem2 {
+    background-image: url(images/background002.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+footer {
+    background-color: black;
+    padding: 8px;
+}
+
+footer > p{
+    color: white;
+    text-align: center;
+}
+
+footer p a {
+    color: black;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+footer p a:hover {
     text-decoration: underline;
 }
